@@ -8,19 +8,10 @@ html {
   box-sizing: border-box;
 }
 body {
+  display: inline-block;
   font-family: sans-serif;
   color: rgb(255, 255, 255);
   background: rgb(29, 29, 29);
-}
-header {
-  width: 95%;
-  height: 10vh;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 2;
 }
 
 .btns-container .fas {
@@ -131,7 +122,8 @@ header {
 /* nav bar ends here */
 
 #section-home {
-  min-height: 100vh;
+  min-height: 95px;
+  width: full;
   display: flex;
   align-items: center;
   padding: 1.5rem;
@@ -186,6 +178,7 @@ header {
   position: relative;
   text-align: center;
   color: #08fdd8;
+  margin-left: 4%;
   margin-top: 50px;
 }
 .contact-button div {
@@ -240,6 +233,7 @@ header {
 }
 .scroll-down--left {
   left: -30px;
+  margin-left: 9%;
   right: auto;
 }
 .scroll-down span {
@@ -259,7 +253,7 @@ header {
   margin-left: 10px;
 }
 
-/* part 2 starts here */ /* part 2 starts here */ /* part 2 starts here */
+/* part 2 starts here */
 
 #section-work {
   padding: 0rem 0rem 0rem 17rem;
@@ -285,13 +279,28 @@ header {
   font-weight: 600;
   position: absolute;
   color: #2d2d2e;
-  left: 5px;
+  left: 6px;
+  margin: 2%;
   bottom: -60px;
   letter-spacing: -12px;
   z-index: -999;
 }
-.fake-magicwall {
-  display: flex;
+.fake-magicwall ul {
+  display: grid;
+  gap: 50px 200px;
+  grid-template-columns: auto auto;
+}
+.magic-wall_item {
+  margin-left: 40%;
+}
+.magic-wall_item img {
+  width: 450px;
+}
+.magic-wall_item img:hover {
+  width: 500px;
+}
+.magic-wall_item ul li {
+  list-style-type: none;
 }
 /* media section for bigger screens */
 
